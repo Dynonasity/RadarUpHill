@@ -10,13 +10,33 @@
     <body>
     
         <div id="Text"></div>
-
+        
         <script>
             var TextNode = document.createTextNode("RadarUpHill Is Silly on Tuesdays");
 
             document.getElementById("Text").appendChild(TextNode);
 
         </script>
+
+        <script>
+            let IsGrey = true;
+
+            function changeBackGroundColor {
+                if (IsGrey) {
+                document.body.style.backgroundColor = "grey";
+            } else {
+                document.body.style.backgroundColor = "black";
+            }
+            IsGrey = !IsGrey
+
+            setInterval(changeBackgroundColor, 4000);
+            
+            }
+
+
+
+        </script>
+
 
     </body>
 <html>
