@@ -9,14 +9,42 @@
 
     <body>
     
-        <div id="Text"></div>
         
+       
+
+
+        <style>
+           .relative-button {
+            position: relative;
+            top: 200px;   /* Moves down 50px */
+            left: 800px; /* Moves right 100px */
+            width: 100px;
+            height: 50px;;
+        }
+        
+        .relative-TitleText {
+            position: relative;
+            top: 10px;   /* Moves down 50px */
+            left: 700px; /* Moves right 100px */
+        }
+
+        </style>
+
+        <button class="relative-button" style="font-size: 30px;" >Radar</button>
+
+        <div id="Text" style="font-size: 60px;" class="relative-TitleText"></div>
+
+
         <script>
-            var TextNode = document.createTextNode("RadarUpHill Is Silly on Tuesdays");
+            var TextNodeTest = document.createTextNode("            RadarUpHill          ");
 
-            document.getElementById("Text").appendChild(TextNode);
+            document.getElementById("Text").appendChild(TextNodeTest);
 
-            TextNode.style.fontSize = "100px";
+    
+
+
+
+
 
 
 
@@ -33,7 +61,11 @@
             setInterval(changeBackgroundColor, 4000);
             
             }
+
+
+
             
+
         </script>
 
         
